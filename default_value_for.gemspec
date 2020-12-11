@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name                  = %q{default_value_for}
-  s.version               = "3.0.2"
+  s.version               = "3.3.0"
   s.summary               = %q{Provides a way to specify default values for ActiveRecord models}
   s.description           = %q{The default_value_for plugin allows one to define default values for ActiveRecord models in a declarative manner}
   s.email                 = %q{software-signing@phusion.nl}
@@ -14,8 +14,17 @@ Gem::Specification.new do |s|
     'lib/default_value_for.rb',
     'lib/default_value_for/railtie.rb'
   ]
+<<<<<<< HEAD
   s.add_dependency 'activerecord', '>= 3.2.0', '< 6.0'
   s.add_development_dependency 'railties', '>= 3.2.0', '< 6.0'
+||||||| b53779d
+  s.add_dependency 'activerecord', '>= 3.2.0', '< 5.1'
+  s.add_development_dependency 'railties', '>= 3.2.0', '< 5.1'
+=======
+  s.add_dependency 'activerecord', '>= 3.2.0', '< 6.1'
+  s.add_development_dependency 'actionpack', '>= 3.2.0', '< 6.1'
+  s.add_development_dependency 'railties', '>= 3.2.0', '< 6.1'
+>>>>>>> upstream/master
   s.add_development_dependency 'minitest', '>= 4.2'
   s.add_development_dependency 'minitest-around'
   s.add_development_dependency 'appraisal'
